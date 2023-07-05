@@ -20,7 +20,7 @@ This project analyzes the radiation pattern, gain, realized gain, and impedance 
 <p align="center">
 <b>Half Wave Dipole Antenna:</b><br><br><br/></p>
   <p align="left">
-  A half wave dipole antenna using a frequency of 299.793Hz was built in EZNEC using one 0.484m wire with eleven segments and a source centered on the sixth segment. A frequency sweep was performed, and a plot of the elevation and 3D raidation patterns were obtained.</p><br><br>
+  A half wave dipole antenna using a frequency of 299.793Hz was built in EZNEC using one 0.484m wire with eleven segments and a 1A current source centered on the sixth segment. A frequency sweep was performed, and a plot of the elevation and 3D raidation patterns were obtained.</p><br><br>
   <p align="center">
   <img src="https://i.imgur.com/blR18A5.png" height="80%" width="80%" alt="Dipole Antenna"/><br>
   <b>Half Wave Dipole Antenna Configuration</b><br><br><br><br>
@@ -47,7 +47,7 @@ This project analyzes the radiation pattern, gain, realized gain, and impedance 
 <p align="center">
 <b>Two Stacked Element Array:</b><br><br><br/>
   <p align="left">
-  A two stacked element antenna array using a frequency of 299.793Hz was built in EZNEC using two 0.484m wires with nine segments, a 0.5m z-axis offset, and a source centered on the fifth segment of each wire. A frequency sweep was performed, and a plot of the elevation and 3D raidation patterns were obtained.</p><br><br>
+  A two stacked element antenna array using a frequency of 299.793Hz was built in EZNEC using two 0.484m wires with nine segments, a 0.5m z-axis offset, and a 1A current source centered on the fifth segment of each wire. A frequency sweep was performed, and a plot of the elevation and 3D raidation patterns were obtained.</p><br><br>
   <p align="center">
   <img src="https://i.imgur.com/pyaFild.png" height="80%" width="80%" alt="Two Stacked Element Antenna Array"/><br>
   <b>Two Stacked Element Antenna Array Configuration</b><br><br><br><br>
@@ -72,7 +72,7 @@ This project analyzes the radiation pattern, gain, realized gain, and impedance 
 <p align="center">
 <b>Cardioid Array:</b><br><br><br/>
   <p align="left">
-  A cardioid antenna array using a frequency of 299.793Hz was built in EZNEC using two 0.484m wires with nine segments, a 0.25m (quarter wavelength) x-axis offset, and a source centered on the fifth segment of each wire with the second wire source at x=0.25m having a 90 degree phase lag. A frequency sweep was performed, and a plot of the elevation and 3D raidation patterns were obtained.</p><br><br>
+  A cardioid antenna array using a frequency of 299.793Hz was built in EZNEC using two 0.484m wires with nine segments, a 0.25m (quarter wavelength) x-axis offset, and a 1A current source centered on the fifth segment of each wire with the second wire source at x=0.25m having a 90 degree phase lag. A frequency sweep was performed, and a plot of the elevation and 3D raidation patterns were obtained.</p><br><br>
   <p align="center">
   <img src="https://i.imgur.com/1rJEUB5.png" height="80%" width="80%" alt="Cardioid Antenna Array"/><br>
   <b>Cardioid Antenna Array Configuration</b><br><br><br><br>
@@ -92,6 +92,26 @@ This project analyzes the radiation pattern, gain, realized gain, and impedance 
   <img src="https://i.imgur.com/0uzcpWK.png" height="80%" width="80%" alt="Cardioid Azimuth Pattern Plot"/><br>
   <b>Azimuth Pattern Plot</b><br><br><br><br></p>
 <br />
+<br />
+<br />
+<p align="center">
+<b>Communications Link:</b><br><br><br/>
+  <p align="left">
+  A communications link between two half wave dipoles separated by 20m along the x-axis was created and simulated. Each dipole was a 0.484m wire with nine segment each. The first wire at the origin had a 1A current source on the fifth segment of the wire, and the second wire at x=20m had a 50 Ohm load on the fifth segment of the wire.</p><br><br>
+  <p align="center">
+  <img src="https://i.imgur.com/Yuw3G1h.png" height="60%" width="60%" alt="Comm Link Antenna System"/><br>
+  <b>Communications Link Antenna System Configuration</b><br><br><br><br></p>
+  <p align="left">
+  The source and load data of the simulation were gathered to obtain the Power Receieved to Power Transmitted ratio of <b>Pr/Pt</b> = <b>4.103x10^-5</b><br><br></p>
+  <p align="center">
+  <img src="https://i.imgur.com/oO4nFiG.png" height="80%" width="80%" alt="Source and Load Data"/><br><br></p>
+  <p align="left">
+  This was compared to a theoretical Pr/Pt using Friis Equation:<br><br>
+  Pr/Pt = GtGr(λ/4piR)^2<br>
+  Gt = Gr = 1.64W<br>
+  λ = 1m<br>
+  R = 20m<br>
+  <b>Pr/Pt</b> = <b>4.258x10^-5</b><br></p>
 <br />
 <br />
 </p>
