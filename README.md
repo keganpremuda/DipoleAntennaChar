@@ -97,7 +97,7 @@ This project analyzes the radiation pattern, gain, realized gain, and impedance 
 <p align="center">
 <b>Communications Link:</b><br><br><br/>
   <p align="left">
-  A communications link between two half wave dipoles separated by 20m along the x-axis was created and simulated. Each dipole was a 0.484m wire with nine segment each. The first wire at the origin had a 1A current source on the fifth segment of the wire, and the second wire at x=20m had a 50 Ohm load on the fifth segment of the wire.</p><br><br>
+  A communications link between two half-wave dipoles separated by 20m along the x-axis was created and simulated. Each dipole was a 0.484m wire with nine segments each. The first wire at the origin had a 1A current source on the fifth segment of the wire, and the second wire at x=20m had a 50 Ohm load on the fifth segment of the wire.</p><br><br>
   <p align="center">
   <img src="https://i.imgur.com/Yuw3G1h.png" height="60%" width="60%" alt="Comm Link Antenna System"/><br>
   <b>Communications Link Antenna System Configuration</b><br><br><br><br></p>
